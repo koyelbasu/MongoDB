@@ -8,7 +8,7 @@ const app = express();
 connectDb();
 
 app.get("/", (req, res) => {
-    res.send("Done");
+    res.send("Done the output");
 });
 
 module.exports = app;
