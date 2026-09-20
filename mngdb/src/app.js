@@ -22,7 +22,9 @@ app.post('/create', (req, res)=>{
         title,
         description
     });
-    res.send("ok got it")
+    res.send({
+        success:true,
+    })
     
 });
 
