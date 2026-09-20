@@ -5,7 +5,7 @@ let noteSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    ddescription: {
+    description: {
         type: String,
         minlength: 10,
     }
