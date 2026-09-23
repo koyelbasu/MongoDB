@@ -15,16 +15,18 @@ app.get("/products", (req, res) => {
     res.send("products");
 });
 
-app.post('/create', (req, res)=>{
+app.post('/create', async (req, res)=>{
     let {title, description} = req.body;
 
-    const newNote = NoteModel.create({
+    const newNote = await NoteModel.create({
         title,
         description
     });
     res.send({
         success:true,
-    })
+        message: "Note created successfully",
+        data: newNote,
+    });
     
 });
 
