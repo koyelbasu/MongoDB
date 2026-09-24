@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
     res.send("Done the output");
 });
 
-app.get("/products", (req, res) => {
+app.get("/product", (req, res) => {
     res.send("products");
 });
 
